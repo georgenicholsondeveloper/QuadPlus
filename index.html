@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quad Plus</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="fonts/daxWebkit/daxFontStylesheet.css">
+</head>
+<body class="single-scene view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+
+      <a href="javascript:void(0)" class="scene" data-id="Quadplus">
+        <li class="text">quadPlus</li>
+      </a>
+
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="https://unihub.mdx.ac.uk/student-life/welcome" target="_blank" id="accessibility">
+  <h2>Accessibility</h2>
+</a>
+
+
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="toggleDeviceOrientation">
+  <img class="enable" src="img/enable.png">
+  <img class="disable" src="img/disable.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+
+
+<div class="popup" id="popup2">
+	<div class = "headerbar"><h1>Welcome to<br>Middlesex University!</h1></div><br>
+	<p>You can use this space to explore our Quad building, the reception of our London campus.</p>
+	<p>Book events, check out what support is available to you, ask current students questions, and discover the exciting ways you can get involved and build connections as part of #TeamMDX!</p>
+  <img src="img/whiteLogo.png" width="50" height="50">
+
+	<div class="button" id="popupClick"><h3>Continue</h3></div>
+</div>
+
+
+
+<script src="vendor/es5-shim.js"></script>
+<script src="vendor/eventShim.js"></script>
+<script src="vendor/classList.js"></script>
+<script src="vendor/requestAnimationFrame.js" ></script>
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="DeviceOrientationControlMethod.js"></script>
+<script src="data.js"></script>
+<script src="autorotate.js"></script>
+<script src="index.js"></script>
+<!--[if !IE]-->
+    <script src="gyroscope.js"></script>
+<!--<![endif]-->
+
+</body>
+</html>
